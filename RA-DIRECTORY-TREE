@@ -1,0 +1,343 @@
+(venv) victoryavanadis@Mac RA.Aid % ls -R
+CHANGELOG.md		MANIFEST.in		README.md		assets			docs			frontend		ra_aid			requirements-dev.txt	uv.lock
+LICENSE			Makefile		adr			components.json		examples		pyproject.toml		replit.nix		tests
+
+./adr:
+webui.md
+
+./assets:
+RA-black-bg.png				demo-chat-mode-1.gif			demo-ra-aid-task-1.gif			favicon.ico				logo.png
+RA-black-square.png			demo-chat-mode-interrupted-1.gif	demo-web-research-1.gif			logo-black-transparent.png
+RA-social-preview.png			demo-oneshot-helloworld.gif		demo.gif				logo-white-transparent.gif
+
+./docs:
+README.md		docusaurus.config.ts	package.json		scripts			src			tsconfig.json
+docs			package-lock.json	ra-aid.openapi.yml	sidebars.ts		static
+
+./docs/docs:
+api		configuration	contributing.md	getting-help.md	intro.md	quickstart	usage
+
+./docs/docs/api:
+_category_.json								get-session-trajectories-v-1-session-session-id-trajectory-get.api.mdx	sidebar.ts
+create-session-v-1-session-post.api.mdx					get-session-v-1-session-session-id-get.api.mdx				spawn-agent-v-1-spawn-agent-post.api.mdx
+get-config-config-get.api.mdx						list-sessions-v-1-session-get.api.mdx
+get-root-get.api.mdx							ra-aid-api.info.mdx
+
+./docs/docs/configuration:
+_category_.json		expert-model.md		logging.md		memory-management.md	ollama.md		project-state.md	reasoning-assistance.md	thinking-models.md
+
+./docs/docs/quickstart:
+_category_.json	installation.md	open-models.md	recommended.md
+
+./docs/docs/usage:
+_category_.json		cpp-game.md		custom-tools.md		modern-web-app.md	monorepo.md
+
+./docs/scripts:
+README.md	version.js
+
+./docs/src:
+components	css
+
+./docs/src/components:
+HomepageFeatures
+
+./docs/src/components/HomepageFeatures:
+index.tsx		styles.module.css
+
+./docs/src/css:
+custom.css
+
+./docs/static:
+img
+
+./docs/static/img:
+docusaurus-social-card.jpg	favicon.ico			logo-white-transparent.gif	undraw_docusaurus_mountain.svg	undraw_docusaurus_tree.svg
+docusaurus.png			logo-black-transparent.png	logo.svg			undraw_docusaurus_react.svg
+
+./examples:
+custom-tools-mcp
+
+./examples/custom-tools-mcp:
+README.md	mcp_server.py	tools.py
+
+./frontend:
+common			package-lock.json	package.json		vsc			web
+
+./frontend/common:
+dist			package-lock.json	package.json		postcss.config.js	src			tailwind.config.js	tailwind.preset.js	tsconfig.json
+
+./frontend/common/dist:
+components	index.d.ts	index.js	styles		utils.d.ts	utils.js
+
+./frontend/common/dist/components:
+ui
+
+./frontend/common/dist/components/ui:
+button.d.ts	button.js	card.d.ts	card.js		index.d.ts	index.js	input.d.ts	input.js	switch.d.ts	switch.js
+
+./frontend/common/dist/styles:
+global.css
+
+./frontend/common/src:
+assets		components	index.ts	models		store		styles		types		utils		utils.ts
+
+./frontend/common/src/assets:
+logo-black-transparent.png	logo-white-transparent.gif
+
+./frontend/common/src/components:
+DefaultAgentScreen.tsx	InputSection.tsx	SessionDrawer.tsx	SessionList.tsx		SessionSidebar.tsx	TimelineFeed.tsx	TimelineStep.tsx	TrajectoryPanel.tsx	trajectories		ui
+
+./frontend/common/src/components/trajectories:
+GenericTrajectory.tsx		InfoTrajectory.tsx		MemoryOperationTrajectory.tsx	StageTransitionTrajectory.tsx	ToolExecutionTrajectory.tsx	index.ts
+
+./frontend/common/src/components/ui:
+button.tsx			collapsible.tsx			index.ts			layout.tsx			sheet.tsx			textarea.tsx
+card.tsx			floating-action-button.tsx	input.tsx			scroll-area.tsx			switch.tsx
+
+./frontend/common/src/models:
+clientConfig.ts	session.ts	trajectory.ts
+
+./frontend/common/src/store:
+clientConfigStore.ts	index.ts		sessionStore.ts		trajectoryStore.ts
+
+./frontend/common/src/styles:
+global.css
+
+./frontend/common/src/types:
+image.d.ts
+
+./frontend/common/src/utils:
+api.ts		index.ts	sample-data.ts	types.ts
+
+./frontend/vsc:
+CHANGELOG.md			assets				esbuild.js			package-lock.json		src				vsc-extension-quickstart.md
+README.md			dist				eslint.config.mjs		package.json			tsconfig.json
+
+./frontend/vsc/assets:
+RA-white-transp.png	RA.png
+
+./frontend/vsc/dist:
+extension.js		extension.js.map
+
+./frontend/vsc/src:
+extension.ts	test
+
+./frontend/vsc/src/test:
+extension.test.ts
+
+./frontend/web:
+index.html		package.json		postcss.config.js	src			tailwind.config.js	tsconfig.json		vite.config.js
+
+./frontend/web/src:
+index.tsx
+
+./ra_aid:
+__init__.py			agents				console				fallback_handler.py		models_params.py		server				version_check.py
+__main__.py			agents_alias.py			database			file_listing.py			proc				tests
+__pycache__			anthropic_message_utils.py	dependencies.py			llm.py				project_info.py			text
+__version__.py			anthropic_token_limiter.py	env.py				logging_config.py		project_state.py		tool_configs.py
+agent_backends			callbacks			env_inv.py			migrations			prompts				tool_leaderboard.py
+agent_context.py		chat_models			env_inv_context.py		model_detection.py		provider_strategy.py		tools
+agent_utils.py			config.py			exceptions.py			model_formatters		scripts				utils
+
+./ra_aid/__pycache__:
+__init__.cpython-313.pyc		agents_alias.cpython-313.pyc		env.cpython-313.pyc			file_listing.cpython-313.pyc		project_info.cpython-313.pyc		version_check.cpython-313.pyc
+__main__.cpython-313.pyc		anthropic_message_utils.cpython-313.pyc	env_inv.cpython-313.pyc			llm.cpython-313.pyc			project_state.cpython-313.pyc
+__version__.cpython-313.pyc		anthropic_token_limiter.cpython-313.pyc	env_inv_context.cpython-313.pyc		logging_config.cpython-313.pyc		provider_strategy.cpython-313.pyc
+agent_context.cpython-313.pyc		config.cpython-313.pyc			exceptions.cpython-313.pyc		model_detection.cpython-313.pyc		tool_configs.cpython-313.pyc
+agent_utils.cpython-313.pyc		dependencies.cpython-313.pyc		fallback_handler.cpython-313.pyc	models_params.cpython-313.pyc		tool_leaderboard.cpython-313.pyc
+
+./ra_aid/agent_backends:
+__init__.py	__pycache__	ciayn_agent.py
+
+./ra_aid/agent_backends/__pycache__:
+__init__.cpython-313.pyc	ciayn_agent.cpython-313.pyc
+
+./ra_aid/agents:
+__init__.py			implementation_agent.py		key_snippets_gc_agent.py	research_agent.py
+__pycache__			key_facts_gc_agent.py		planning_agent.py		research_notes_gc_agent.py
+
+./ra_aid/agents/__pycache__:
+__init__.cpython-313.pyc		implementation_agent.cpython-313.pyc	key_facts_gc_agent.cpython-313.pyc	key_snippets_gc_agent.cpython-313.pyc	planning_agent.cpython-313.pyc		research_agent.cpython-313.pyc
+
+./ra_aid/callbacks:
+__pycache__			anthropic_callback_handler.py
+
+./ra_aid/callbacks/__pycache__:
+anthropic_callback_handler.cpython-313.pyc
+
+./ra_aid/chat_models:
+__pycache__		deepseek_chat.py
+
+./ra_aid/chat_models/__pycache__:
+deepseek_chat.cpython-313.pyc
+
+./ra_aid/console:
+__init__.py		__pycache__		common.py		cowboy_messages.py	formatting.py		output.py
+
+./ra_aid/console/__pycache__:
+__init__.cpython-313.pyc	common.cpython-313.pyc		cowboy_messages.cpython-313.pyc	formatting.cpython-313.pyc	output.cpython-313.pyc
+
+./ra_aid/database:
+__init__.py		__pycache__		connection.py		migrations.py		models.py		pydantic_models.py	repositories		tests			utils.py
+
+./ra_aid/database/__pycache__:
+__init__.cpython-313.pyc	connection.cpython-313.pyc	migrations.cpython-313.pyc	models.cpython-313.pyc		pydantic_models.cpython-313.pyc	utils.cpython-313.pyc
+
+./ra_aid/database/repositories:
+__init__.py			config_repository.py		key_fact_repository.py		related_files_repository.py	session_repository.py		work_log_repository.py
+__pycache__			human_input_repository.py	key_snippet_repository.py	research_note_repository.py	trajectory_repository.py
+
+./ra_aid/database/repositories/__pycache__:
+__init__.cpython-313.pyc			human_input_repository.cpython-313.pyc		key_snippet_repository.cpython-313.pyc		research_note_repository.cpython-313.pyc	trajectory_repository.cpython-313.pyc
+config_repository.cpython-313.pyc		key_fact_repository.cpython-313.pyc		related_files_repository.cpython-313.pyc	session_repository.cpython-313.pyc		work_log_repository.cpython-313.pyc
+
+./ra_aid/database/tests:
+ra_aid
+
+./ra_aid/database/tests/ra_aid:
+database
+
+./ra_aid/database/tests/ra_aid/database:
+test_connection.py
+
+./ra_aid/migrations:
+002_20250301_212203_add_key_fact_model.py		006_20250303_211704_add_research_note_model.py		010_20250311_191617_add_session_fk_to_key_fact.py	014_20250312_140700_add_token_fields_to_trajectory.py
+003_20250302_163752_add_key_snippet_model.py		007_20250310_184046_add_trajectory_model.py		011_20250311_191732_add_session_fk_to_key_snippet.py	__init__.py
+004_20250302_200312_add_human_input_model.py		008_20250311_191232_add_session_model.py		012_20250311_191832_add_session_fk_to_research_note.py
+005_20250302_201611_add_human_input_reference.py	009_20250311_191517_add_session_fk_to_human_input.py	013_20250311_191701_add_session_fk_to_trajectory.py
+
+./ra_aid/model_formatters:
+__init__.py			__pycache__			key_facts_formatter.py		key_snippets_formatter.py	research_notes_formatter.py
+
+./ra_aid/model_formatters/__pycache__:
+__init__.cpython-313.pyc			key_facts_formatter.cpython-313.pyc		key_snippets_formatter.cpython-313.pyc		research_notes_formatter.cpython-313.pyc
+
+./ra_aid/proc:
+__pycache__	interactive.py
+
+./ra_aid/proc/__pycache__:
+interactive.cpython-313.pyc
+
+./ra_aid/prompts:
+__init__.py			ciayn_prompts.py		expert_prompts.py		key_facts_cleaner_prompts.py	planning_prompts.py		research_prompts.py
+__pycache__			common_prompts.py		human_prompts.py		key_facts_gc_prompts.py		reasoning_assist_prompt.py	web_research_prompts.py
+chat_prompts.py			custom_tools_prompts.py		implementation_prompts.py	key_snippets_gc_prompts.py	research_notes_gc_prompts.py
+
+./ra_aid/prompts/__pycache__:
+__init__.cpython-313.pyc		common_prompts.cpython-313.pyc		human_prompts.cpython-313.pyc		key_snippets_gc_prompts.cpython-313.pyc	research_prompts.cpython-313.pyc
+chat_prompts.cpython-313.pyc		custom_tools_prompts.cpython-313.pyc	implementation_prompts.cpython-313.pyc	planning_prompts.cpython-313.pyc	web_research_prompts.cpython-313.pyc
+ciayn_prompts.cpython-313.pyc		expert_prompts.cpython-313.pyc		key_facts_gc_prompts.cpython-313.pyc	reasoning_assist_prompt.cpython-313.pyc
+
+./ra_aid/scripts:
+__init__.py			__pycache__			cli.py				generate_openapi.py		last_session_usage.py
+__main__.py			all_sessions_usage.py		extract_changelog.py		generate_swebench_dataset.py
+
+./ra_aid/scripts/__pycache__:
+__init__.cpython-313.pyc		all_sessions_usage.cpython-313.pyc	last_session_usage.cpython-313.pyc
+
+./ra_aid/server:
+__init__.py		__pycache__		api_v1_sessions.py	api_v1_spawn_agent.py	server.py
+
+./ra_aid/server/__pycache__:
+__init__.cpython-313.pyc		api_v1_sessions.cpython-313.pyc		api_v1_spawn_agent.cpython-313.pyc	server.cpython-313.pyc
+
+./ra_aid/tests:
+__init__.py	ra_aid		test_env.py
+
+./ra_aid/tests/ra_aid:
+model_formatters		test_agent_context.py		test_agent_should_exit.py	text
+
+./ra_aid/tests/ra_aid/model_formatters:
+__init__.py			test_key_facts_formatter.py
+
+./ra_aid/tests/ra_aid/text:
+__init__.py
+
+./ra_aid/text:
+__init__.py	__pycache__	processing.py
+
+./ra_aid/text/__pycache__:
+__init__.cpython-313.pyc	processing.cpython-313.pyc
+
+./ra_aid/tools:
+__init__.py					file_str_replace.py					list_directory.py				reflection.py					web_search_tavily.py
+__pycache__					fuzzy_find.py					memory.py					research.py					write_file.py
+agent.py					handle_user_defined_test_cmd_execution.py	programmer.py					ripgrep.py
+expert.py					human.py					read_file.py					shell.py
+
+./ra_aid/tools/__pycache__:
+__init__.cpython-313.pyc				handle_user_defined_test_cmd_execution.cpython-313.pyc	read_file.cpython-313.pyc				web_search_tavily.cpython-313.pyc
+agent.cpython-313.pyc					human.cpython-313.pyc					reflection.cpython-313.pyc				write_file.cpython-313.pyc
+expert.cpython-313.pyc					list_directory.cpython-313.pyc				research.cpython-313.pyc
+file_str_replace.cpython-313.pyc			memory.cpython-313.pyc					ripgrep.cpython-313.pyc
+fuzzy_find.cpython-313.pyc				programmer.cpython-313.pyc				shell.cpython-313.pyc
+
+./ra_aid/utils:
+__init__.py	__pycache__	file_utils.py	mcp_client.py	singleton.py
+
+./ra_aid/utils/__pycache__:
+__init__.cpython-313.pyc	file_utils.cpython-313.pyc	singleton.cpython-313.pyc
+
+./tests:
+__init__.py			conftest.py			pytest.ini			scripts				test_list_file.py		test_project_info.py
+agent_backends			data				ra_aid				test_file_listing.py		test_non_git_file_listing.py	test_project_state.py
+
+./tests/agent_backends:
+test_bundled_tools.py
+
+./tests/data:
+binary				invalid_case_2.txt		test_case_1.txt			test_case_3.txt			test_case_5.txt			think-tag
+invalid_case_1.txt		invalid_case_3.txt		test_case_2.txt			test_case_4.txt			test_case_6.txt			valid_function_calls.txt
+
+./tests/data/binary:
+notbinary.c
+
+./tests/data/think-tag:
+sample_1.txt
+
+./tests/ra_aid:
+__init__.py				prompts					test_anthropic_token_limiter.py		test_info_query.py			test_provider_integration.py		test_version_check.py
+agent_backends				server					test_ciayn_agent.py			test_llm.py				test_show_thoughts.py			test_wipe_project_memory.py
+console					test_agent_context.py			test_crash_propagation.py		test_main.py				test_temperature_handling.py		text
+database				test_agent_should_exit_ciayn.py		test_default_provider.py		test_model_detection.py			test_token_usage_tracking.py		tools
+mocks					test_agent_utils.py			test_env.py				test_ollama_config_repository.py	test_tool_configs.py			utils
+proc					test_anthropic_strategy.py		test_fallback_handler.py		test_programmer.py			test_utils.py
+
+./tests/ra_aid/agent_backends:
+test_ciayn_agent_think_tag.py	test_ciayn_bundled_tools.py	test_ciayn_no_repeat_tools.py	test_ciayn_single_tool.py	test_ciayn_stream_bundling.py	test_ciayn_tool_execution.py	test_ciayn_tool_validation.py
+
+./tests/ra_aid/console:
+__init__.py		test_cowboy_messages.py	test_output.py
+
+./tests/ra_aid/database:
+__init__.py				test_human_input_repository.py		test_migrations.py			test_research_note_repository.py	test_trajectory_repository.py
+test_config_repository.py		test_key_fact_repository.py		test_models.py				test_session_repository.py		test_utils.py
+test_connection.py			test_key_snippet_repository.py		test_pydantic_models.py			test_source_migrations.py
+
+./tests/ra_aid/mocks:
+agent_utils_mock.py	ascii.txt
+
+./tests/ra_aid/proc:
+test_interactive.py		test_windows_compatibility.py
+
+./tests/ra_aid/prompts:
+test_planning_prompts.py
+
+./tests/ra_aid/server:
+test_api_v1_sessions.py			test_api_v1_spawn_agent.py		test_server.py				test_sessions_api_integration.py
+
+./tests/ra_aid/text:
+__init__.py			test_process_thinking.py	test_processing.py
+
+./tests/ra_aid/tools:
+test_agent.py					test_expert_think_tag.py			test_handle_user_defined_test_cmd_execution.py	test_read_file.py				test_write_file.py
+test_execution.py				test_file_str_replace.py			test_list_directory.py				test_reflection.py
+test_expert.py					test_fuzzy_find.py				test_memory.py					test_shell.py
+
+./tests/ra_aid/utils:
+__init__.py		test_file_utils.py
+
+./tests/scripts:
+test_extract_changelog.py
+(venv) victoryavanadis@Mac RA.Aid % 
